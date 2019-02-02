@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery DOM Traversal</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Make the following happen with DOM traversal methods:</h1>
+  <ul>
+    <li>Red border around .author-name</li>
+    <li>Orange border around .author-related-news-container</li>
+    <li>Hide each image on the page</li>
+    <li>Make each H2 have a pink background with padding</li>
+    <li>Make each H3 have a green background with white text</li>
+  </ul>
+  <hr>
+
+  <!-- Feature Content -->
+  <section class="staff-content-container">
+    <h1 class="article-title">Editorial Team</h1>
+    <div class="author-container">
+      <div class="author-picture">
+        <img class="media-object" src="img/author_sketch.jpg" alt="Author Headshot">
+      </div>
+      <div class="author-content">
+        <hr class="author-rule">
+        <h2 class="author-name">Ben Iannotta</h2>
+        <div class="author-info-container">
+          <h3 class="author-title">Editor-in-Chief</h3>
+          <h3 class="author-email">beni@aiaa.org</h3>
+        </div>
+        <p>Author bio - ex eget tellus pharetra efficitur. Nullam quis metus id sapien consectetur aliquam a in tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        <h3 class="author-related-news-title">Articles from Ben:</h3>
+        <div class="author-related-news-container">
+          <div class="author-related-news-image">
+            <img src="img/author-related-image-1.jpg" alt="Sample Image">
+          </div>
+          <div class="author-related-news-content">
+            <h2 class="author-related-news-item-title">Related News 1</h2>
+            <p class="author-related-news-item-summary">Nullam quis metus id sapien consectetur aliquam a in tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+        <div class="author-related-news-container">
+          <div class="author-related-news-image">
+            <img src="img/author-related-image-2.jpg" alt="Sample Image">
+          </div>
+          <div class="author-related-news-content">
+            <h2 class="author-related-news-item-title">Related News 2</h2>
+            <p class="author-related-news-item-summary">Nullam quis metus id sapien consectetur aliquam a in tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+        <div class="author-related-news-container">
+          <div class="author-related-news-image">
+            <img src="img/author-related-image-3.jpg" alt="Sample Image">
+          </div>
+          <div class="author-related-news-content">
+            <h2 class="author-related-news-item-title">Related News 3</h2>
+            <p class="author-related-news-item-summary">Nullam quis metus id sapien consectetur aliquam a in tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

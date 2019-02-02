@@ -1,0 +1,12 @@
+hr {
+    border: 1px solid red;
+    margin: 2em 0;
+}
+
+#doneList li {
+    text-decoration: line-through;
+}
+
+#doneList input[type=checkbox] {
+    display: none;
+}

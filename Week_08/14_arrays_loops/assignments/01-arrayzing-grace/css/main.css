@@ -1,0 +1,11 @@
+body {
+  margin: 50px;
+}
+
+.fruit-variable-container {
+  height: 150px;
+}
+
+h3, #fruit-variable, #fruit-variable-mod, #fruit-variable-msg, #fruit-variable-original {
+  display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Modal Exercise</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bootstrap Modal Exercise</h1>
+    </header>
+
+    <!-- Button trigger modal -->
+    <section class="buttonContainer">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Open My Modal!
+        </button>
+    </section>
+
+    <!-- The modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    
+                    <h4 class="modal-title" id="myModalLabel">Riker Ipsum</h4>
+                </div>
+    
+                <div class="modal-body">
+                    <p>When has justice ever been as simple as a rule book? Ensign Babyface! Mr. Worf, you sound like a man who's asking his friend if he can start dating his sister. Is it my imagination, or have tempers become a little frayed on the ship lately? Why don't we just give everybody a promotion and call it a night - 'Commander'? I'll be sure to note that in my log. I'll alert the crew. We finished our first sensor sweep of the neutral zone. I recommend you don't fire until you're within 40,000 kilometers. The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules.</p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Fire Torpedos!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

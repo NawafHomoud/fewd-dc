@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+/* offset page header height by height of the top header*/
+h1 {
+  padding-top: 100px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+.nav-container {
+  background-color: #222;
+  color: white;
+  height: 80px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.item {
+  display: inline-block;
+  padding: 25px;
+}
+
+.big-text {
+  font-size: 24px;
+  margin: 0 25px 25px 25px;
+}
+
+p {
+  margin: 12.5px;
+}
+
+.button-style {
+  color: red;
+}
+
+aside {
+  background-color: blue;
+  bottom: 0;
+  color: white;
+  display: none;
+  height: 60px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+}
+
+/* Carousel styles */
+.carousel-container, .carousel-item {
+  height: 650px;
+  width: 100%;
+}
+
+.carousel-item-1 {
+  background: url(../img/acadia.jpg) center center;
+  background-size: cover;
+}
+.carousel-item-2 {
+  background: url(../img/banff.jpg) center center;
+  background-size: cover;
+}
+.carousel-item-3 {
+  background: url(../img/zion.jpg) center center;
+  background-size: cover;
+}
+
+.carousel-title {
+  color: white;
+  font-size: 30px;
+  margin-top: 200px;
+  max-height: 105px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.carousel-byline {
+  color: white;
+  font-size: 20px;
+  margin-top: 16px;
+  text-align: center;
+  text-transform: capitalize;
+}

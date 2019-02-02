@@ -1,0 +1,155 @@
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.clearfix:after {
+  clear: both;
+  content: " ";
+}
+
+/* Fonts, classes are so I can reuse the styles on a variety of elements */
+.merriweather { font-family: 'Merriweather', serif; }
+      .oswald { font-family: 'Oswald', sans-serif; }
+        .lato { font-family: 'Lato', sans-serif; }
+
+
+/* Why is this display: block; not redundant? */
+.button {
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* ############################## */
+/* ########### Header ########### */
+/* ############################## */
+.site-header {
+  background-color: #000;
+  border-bottom: 5px solid #f2ff00;
+  padding: 10px 30px;
+}
+
+h1 {
+  color: #f2ff00;
+  font-size: 32px;
+  padding: 15px 0 5px 0;
+  text-transform: capitalize;
+}
+
+.main-nav {
+  font-size: 20px;
+  padding: 15px 0;
+  text-align: right;
+}
+
+/* How come there is no float here? */
+.main-nav p {
+  color: #fff;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.main-nav.oswald {
+  text-transform: uppercase;
+}
+
+/* Second Section */
+.secondary-text {
+  background-color: #adadad;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.secondary-text p {
+  font-size: 28px;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 3px solid #f2ff00;
+}
+
+/* #################################### */
+/* ########### Hero section ########### */
+/* #################################### */
+
+/* What's going on with the background-size? How is it working? */
+.hero-area {
+  background-image: url('../images/coworking.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+.hero-area h2 {
+  font-weight: bold;
+}
+
+/* Why did I put margin and padding on this element? */
+.inset-div {
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 5px #000;
+  float: right;
+  margin: 25px 25px 0 0;
+  padding: 25px;
+  width: 250px;
+}
+
+.main-cta {
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+}
+
+/* ########################################## */
+/* ########### Three-wide section ########### */
+/* ########################################## */
+
+.third-container {
+  border-right: 1px solid lightgray;
+  float: left;
+  margin: 10px 0;
+  padding: 2%;
+  width: 29%;
+}
+
+.third-container h3 {
+  font-size: 24px;
+}
+
+.third-container:last-child {
+  border-right: none;
+}
+
+.secondary-cta {
+  background-color: #adadad;
+  border-bottom: 2px solid #878787;
+}
+
+/* ############################## */
+/* ########### Footer ########### */
+/* ############################## */
+.site-footer {
+  background-color: #000;
+  clear: both;
+  color: #fff;
+  padding: 15px 25px;
+}

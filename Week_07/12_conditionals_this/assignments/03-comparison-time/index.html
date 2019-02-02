@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery DOM Traversal</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Javascript Comparison Operators and Conditional Statements</h1>
+
+  <!-- Less than or equal to -->
+  <h2>&lt;= (less than or equal to)</h2>
+  <hr>
+  <p id="orange-text">This text has an orange background because of a comparison operator</p>
+
+  <!-- Greater than or equal to -->
+  <h2>&gt;= (greater than or equal to)</h2>
+  <hr>
+  <p>Did you hit blackjack? Yes if you see the picture!</p>
+  <div id="blackjack-container"></div>
+
+  <!-- Inequality -->
+  <h2>!== (inequality)</h2>
+  <hr>
+  <p>Boxes turn yellow because condition sets boolean value</p>
+  <div class="container">
+    <div class="box-example-1">1</div>
+    <div class="box-example-1">2</div>
+    <div class="box-example-1">3</div>
+    <div class="box-example-1">4</div>
+  </div>
+
+  <h1>.val() and this</h1>
+
+  <!-- val() -->
+  <h2>.val()</h2>
+  <hr>
+  <p>The value from the field will be output into HTML via val(); in JS</p>
+  <input type="text" value="water bottle" id="input-set-placeholder-value">
+  <div>Value from the field is: <span id="input-value-output"></span></div>
+
+  <!-- val() -->
+  <h2>.val() and this</h2>
+  <hr>
+  <p>Click some buttons and watch the input field change. Made possible by .val() getting the button values and putting them into the input field.</p>
+  <div>
+    <button>Feed</button>
+    <button>the</button>
+    <button>Input</button>
+  </div>
+  <input type="text" value="Click a Button Above" id="input-destination">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

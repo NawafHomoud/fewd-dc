@@ -1,0 +1,115 @@
+/* Global declarations */
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  line-height: 1.5;
+}
+
+/*
+  HEADING
+  -Note the use of three containers, where .identity-container + .nav-container float
+  -Also notice how I divided up the conatiners 47% width each and 3% margin = 100% total
+  -.items are arranged with inline-block and then right aligned by text-align
+  -I locked the header in place, thought it looked better.
+  -Not a responsive layout but very close, we'll learn how to finish it out soon
+*/
+.heading-container {
+  background-color: #222;
+  color: #fff;
+  font-size: 24px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* z-index positions elements on the third dimension */
+}
+
+.identity-container {
+  padding: 15px 0 15px 3%;
+  float: left;
+  width: 47%;
+}
+
+.nav-container {
+  float: left;
+  margin: 15px 3% 15px 0; /* match .identity-container */
+  padding-left: 0; /* override default */
+  text-align: right;
+  width: 47%;
+}
+
+.item {
+  display: inline-block;
+  list-style: none;
+}
+
+.item:after {
+  content: "|";
+  padding: 0 6px 0 16px;
+}
+
+.item:last-child:after {
+  content: "";
+}
+
+/*
+  MAIN TEXT AREA
+  -The styles here are straight forward, floated with percentage widths
+  -Pay attention to the cadence from the margins
+*/
+
+.big-text {
+  font-size: 24px;
+  float: left;
+  margin: 80px 3%; /* Note that this margin matches the margins from the heading */
+  width: 74%;
+}
+
+.main-heading {
+  margin: 0;
+}
+
+p {
+  margin: 15px 0;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.align-left {
+  float: left;
+  padding: 25px 25px 25px 0; /* no left padding, so it lines up with the text */
+}
+
+.align-right {
+  float: right;
+  padding: 25px 0 25px 25px; /* no right padding, so it lines up with the text */
+}
+
+.orange-section {
+  background-color: orange;
+  color: #fff;
+}
+
+/*
+  SIDEBAR - nothing craxy in here, most of this should make sense
+  Say hello to position: fixed; - we'll talk more about this in responsive design
+  -What do you think it's doing? What is right:0; doing? LOOK IT UP!!!
+*/
+aside {
+  background-color: green;
+  color: #fff;
+  height: 100%;
+  padding: 0 3%;
+  position: fixed;
+  right: 0;
+  width: 14%;
+}
+
+.sidebar-heading {
+  margin-top: 80px; /* Notice how this corresponds to height of the heading */
+}

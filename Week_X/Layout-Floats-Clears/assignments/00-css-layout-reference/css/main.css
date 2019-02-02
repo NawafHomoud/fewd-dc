@@ -1,0 +1,218 @@
+/*
+ * ############### *
+ * ### FLOATS! ### *
+ * ############### *
+ *
+ * BASICS:
+ *
+ * 1- Your first move with CSS floats is to make a global container
+ * This acts the the 'row' for each set of floats
+ *
+ * 2- Then do some math, draw out how you want to lay each row out
+ * You have to make sure each row equals 100% of width
+ * THINK about the box model: width = width + border + padding
+ * Also think about margin in the total width of the row
+ *
+ * 3- Don't forget to do the clear fix
+ * Remember that this allows you to create multiple rows of floats
+ */
+
+/*
+ * .main-container - the global container we are using
+ * Notice it doesn't have height
+ * We want the content of the children to form the height
+ * Note that you don't float the container, only the children
+ */
+.main-container {
+  background-color: #ffab6b;
+  color: #fff;
+  height: 300px;
+  margin: 25px 0;
+}
+
+/*
+ * Clearfix - one of multiple ways to do this
+ * I like using a pseudo class (:after) on the main container
+ * Why? Well, you only have to do this once if you use the same container
+ */
+.main-container:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+/*
+ * Floated Children - 2 wide
+ * Very simply, two boxes, next to each other - together total 100% width
+ * They fit into a row nicely
+ * .box 50% width + .box 50% width
+ */
+.box {
+  float: left;
+  width: 50%;
+}
+
+/*
+ * WHAT!?!? is this madness?
+ * Using :nth-child pseudo classes, you can target specific instances of classes that repeat
+ * In the HTML, .box is listed as a class on two HTML elements right next to each other in the DOM
+ * You can target each of the boxes individually without a separate class, nice little shortcut
+ */
+.box:nth-child(1) {
+  background-color: darkgray;
+}
+
+.box:nth-child(2) {
+  background-color: gray;
+}
+
+/*
+ * Floated Children - 3 wide
+ * In this example, we have three children next to each other
+ * This time I floated each each individually instead of using a global .box class for both children
+ * Both methods work - do what is more comfortable for you
+ * Note .box-1 uses some padding - we had to subtract the horizontal padding values from the width
+ * .box-1: 5% left pad + 23.3% width + 5% right pad
+ * .box-2: 33.3% width
+ * .box-3: 33.3% width
+ */
+.box-1 {
+  background-color: #4d7000;
+  float: left;
+  height: 200px;
+  padding: 0 5%;
+  width: 23.3%;
+}
+
+.box-2 {
+  background-color: #006170;
+  float: left;
+  height: 200px;
+  width: 33.3%;
+}
+
+.box-3 {
+  background-color: #700036;
+  float: left;
+  height: 200px;
+  width: 33.3%;
+}
+
+.box-10 {
+  background-color: gray;
+  float: left;
+  height: 200px;
+  width: 10%;
+}
+
+/* More :nth-child magic...whoa! */
+/* You can do algebraic expressions */
+/* 2n means every other item will turn green */
+/* Because we have 10 .box-10 elements, 2,4,6,8 and 10 will be limegreen */
+.box-10:nth-child(2n) {
+  background-color: limegreen;
+}
+
+/*
+ * Floats in floats
+ * Yes you can put floated items into other floated items
+ */
+.box-100 {
+  background-color: pink;
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+.box-200 {
+  background-color: limegreen;
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+/* Note I'm doing some clearing out on the .box-200 */
+.box-200:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+.box-300 {
+  background-color: skyblue;
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+.box-400 {
+  background-color: purple;
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+.box-nested {
+  float: left;
+  height: 100px;
+  width: 25%;
+}
+
+.box-nested:nth-child(1) {
+  background-color: black;
+}
+
+.box-nested:nth-child(2) {
+  background-color: darkgray;
+}
+
+/*
+ * Borders and floats
+ * You can't use percentage widths for borders, try 'vw' instead
+ * vw units are viewport width units which are functionally very similar to percentages
+ * Sometimes the way a viewport width is calculated is kinda wonky
+ * IF you use this method, make sure your container is width:100vw;
+ */
+.main-container-vw {
+  background-color: #ffab6b;
+  color: #fff;
+  height: 300px;
+  margin: 25px 0;
+  width: 100vw;
+}
+
+.main-container-vw:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+.box-1000 {
+  background-color: red;
+  border-left: 5vw solid black;
+  float: left;
+  height: 200px;
+  width: 20vw;
+}
+
+.box-2000 {
+  background-color: limegreen;
+  float: left;
+  height: 200px;
+  width: 25vw;
+}
+
+.box-3000 {
+  background-color: red;
+  border-right: 5vw solid black;
+  float: left;
+  height: 200px;
+  width: 20vw;
+}
+
+.box-4000 {
+  background-color: limegreen;
+  float: left;
+  height: 200px;
+  width: 25vw;
+}

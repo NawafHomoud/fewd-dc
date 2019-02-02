@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>Array Time</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h2>Learn about Arrays</h2>
+  <p>This little program shows you how array modification methods work on a simple array. We're going to modify an array variable called <i>fruits</i> considerably</p>
+  <section class="select-container">
+    <form id="array-methods-form">
+      <select id="array-methods-select-list">
+        <option value="">Array-specific methods</option>
+        <optgroup label="Methods">
+          <option value="indexOf">indexOf()</option>
+          <option value="length">length</option>
+          <option value="pop">pop()</option>
+          <option value="shift">shift()</option>
+          <option value="push">push()</option>
+          <option value="unshift">unshift()</option>
+          <option value="splice-remove">splice() remove item</option>
+          <option value="splice-add">splice() add item</option>
+          <option value="reverse">reverse()</option>
+        </optgroup>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <div class="fruit-variable-container">
+    <h3>Summary of what's happening:</h3>
+    <p id="fruit-variable-original"></p>
+    <p id="fruit-variable"></p>
+    <p id="fruit-variable-mod"></p>
+    <p id="fruit-variable-msg"></p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

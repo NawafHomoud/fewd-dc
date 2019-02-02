@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+/* offset page header height by height of the top header*/
+h1 {
+  padding-top: 100px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+.nav-container {
+  background-color: #222;
+  color: white;
+  height: 80px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.item {
+  display: inline-block;
+  padding: 25px;
+}
+
+.big-text {
+  font-size: 24px;
+  margin: 0 25px 25px 25px;
+}
+
+p {
+  margin: 12.5px;
+}
+
+.button-style {
+  color: red;
+  margin: 35px 10px;
+}
+
+#show-me-when-scrolling {
+  display: none;
+}
+
+/* Add CSS for carousel */

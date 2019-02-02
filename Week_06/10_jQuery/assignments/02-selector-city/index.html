@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <title>jQuery Basics</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+  <h1>jQuery selectors and methods - the easiest ones</h1>
+
+  <!-- jQuery -->
+  <h2>.html() selection</h2>
+  <p><em>Check the following div out in the console, notice HTML elements in the selection.</em></p>
+  <hr>
+  <div id="funny-bone">
+    <span>How many coders does it take to screw in a lightbulb? We'll have to see a detailed specification before we can commit to the light bulb project.</span>
+  </div>
+
+  <h2>.html() replacement</h2>
+  <hr>
+  <p><em>There was no HTML content in the div below until the JS loaded.</em></p>
+  <div id="redacted-funny-bone">
+  </div>
+
+  <h2>.text() selection</h2>
+  <hr>
+  <p><em>Div content below will get logged in the console. Notice how there are no HTML elements in the console this time. That's the difference between html() and text().</em></p>
+  <div id="funny-bone-again">
+    <span>How many coders does it take to screw in a lightbulb? We'll have to see a detailed specification before we can commit to the light bulb project.</span>
+  </div>
+  <div id="there-is-hope">
+    <span>jQuery is a learnable concept, I promise.</span>
+  </div>
+
+  <h2>.text() replacement</h2>
+  <hr>
+  <p><em>There was no HTML content in the div below until the JS loaded.</em></p>
+  <div id="redacted-funny-bone-again">
+  </div>
+
+  <h2>.css() styling</h2>
+  <hr>
+  <p><em>Green text was added via JS.</em></p>
+  <div id="css-example-01"><span class="green-sunglasses">Green</span> sunglasses are cool enough for me to wear them.</div>
+
+  <h2>.hide() / .show()</h2>
+  <hr>
+  <p><em>These are pretty easy to understand, JS .hide() makes the display set to `display: none;` Check Chrome Dev Tools inspector to see whats going on here</em></p>
+  <div id="css-example-02">There was text here but then my JS overlord got rid of it.</div>
+  <p><em>Likewise, if you set `display: none;` via CSS on an element, just use .show() to make it show up </em></p>
+  <div id="css-example-03">This text was uncovered by my JS overlord. Thanks for that my man.</div>
+
+  <h2>.addClass() / .removeClass()</h2>
+  <hr>
+  <p><em>Add .orange class to following div with .addClass()</em></p>
+  <div id="orange-target">One more row of text to play with</div>
+  <p><em>Likewise, I'm removing the .blue class on this following div with .removeClass()</em></p>
+  <div id="blue-target">This block of text used to have a blue bg from the CSS</div>
+
+  <h2>.slideUp()</h2>
+  <hr>
+  <p><em>.click() with .slideUp() </em></p>
+  <div id="click-slide-up">Click to slide text up</div>
+  <div id="slide-up-target">Watch me disappear</div>
+
+  <h2>.slideUp()</h2>
+  <hr>
+  <p><em>.click() with .slideDown() - same thing just in reverse</em></p>
+  <div id="click-slide-down">Click to slide text down</div>
+  <div id="slide-down-target">Watch me disappear</div>
+
+  <h1>Events</h1>
+
+  <h2>.click()</h2>
+  <hr>
+  <p><em>Allows us to create actions after someone clicks on an element in the window</em></p>
+  <div id="click-trial-01">Click on this</div>
+  <div id="click-appear-red">Make it red</div>
+
+  <p><em>Click event with an annoymous function, another way to have the event handler execute information</em></p>
+  <div id="click-trial-02">Click on this</div>
+  <div id="click-appear-red-02">Make it red</div>
+
+  <h2>.hover()</h2>
+  <hr>
+  <p><em>The hover event works exactly the same way, but isn't used as much anymore because of mobile devices (which have no hover state)</em></p>
+  <div id="hover-appear-red-03">Make it red</div>
+
+  <h1>Methods with Events</h1>
+
+  <h2>.toggleClass()</h2>
+  <hr>
+  <p><em>Add/remove .orange class to following with .click() event and .toggleClass() </em></p>
+  <div id="click-toggle">Click toggle for .orange class</div>
+  <div id="toggle-target">Text that gets a class toggled on and off</div>
+
+  <h2>.slideToggle()</h2>
+  <hr>
+  <p><em>.click() with .slideToggle() - same thing just toggles now</em></p>
+  <div id="click-slide-toggle">Click to toggle slide behavior</div>
+  <div id="slide-toggle-target">Watch me disappear</div>
+
+  <h1>Real JS</h1>
+
+  <!-- Using real JS -->
+  <h2>Basic selection with document.getElementById()</h2>
+  <hr>
+  <p><em>Just in case you wanted to see how this worked without jQuery</em></p>
+  <div id="numbers-1">
+    This text is red via JS not CSS.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  margin: 100px;
+}
+
+#animal-header {
+  display: none;
+}
+
+.button {
+  border: 3px solid #222;
+  padding: 10px 25px;
+}

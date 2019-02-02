@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <title>Image Selector / Switcher</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="national-park-intro">
+    <p class="heading">Select Your Image:</p>
+    <div class="select-container">
+      <form id="national-park-select-list">
+        <select id="np-value">
+          <option value="">Groups</option>
+          <optgroup label="Locations">
+            <option value="Acadia">Acadia</option>
+            <option value="Banff">Banff</option>
+            <option value="Zion">Zion</option>
+          </optgroup>
+          <optgroup label="Fruits">
+            <option value="Banana">Banana</option>
+            <option value="Apple">Apple</option>
+            <option value="Pear">Pear</option>
+          </optgroup>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </header>
+
+  <section id="national-park-injection">
+    <p class="main-text">You're going to <span id="national-park-location"></span></p>
+    <div id="np-picture"></div>
+  </section>
+
+  <footer class="national-park-credit">
+    <p class="main-text">Brought to you by your friends at FEWD29!</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

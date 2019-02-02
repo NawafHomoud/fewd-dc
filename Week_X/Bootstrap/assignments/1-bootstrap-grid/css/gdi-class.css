@@ -1,0 +1,20 @@
+
+/* /////////////  Your leopard-print, responsive, beautiful, fantastic CSS goes here!  //////////////// */
+
+.hotpink {
+	background-color: hotpink;
+}
+
+.make-it-bigger {
+	border: 1px solid black;
+	font-size: 28px;
+	height: 400px;
+}
+
+.experiment-col-1 {
+	background-color: orange;
+}
+
+.experiment-col-2 {
+	background-color: lightblue;
+}

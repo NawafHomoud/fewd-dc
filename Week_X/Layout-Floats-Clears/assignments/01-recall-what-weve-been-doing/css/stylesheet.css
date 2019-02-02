@@ -1,0 +1,17 @@
+/* Put your styles in here */
+body {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #001409;
+  height: 100px;
+}
+
+.main-image-container {
+  background-image: url("img/main-image.jpg");
+  height: 500px;
+  width: 100%;
+}

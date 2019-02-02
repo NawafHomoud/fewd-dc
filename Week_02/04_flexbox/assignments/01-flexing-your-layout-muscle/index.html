@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="intro">
+    <p class="heading">Flexbox - CONTAINER properties</p>
+  </header>
+  <header class="intro">
+    <p class="heading"><span class="code">justify-content</span> - control left/right alignment</p>
+  </header>
+
+  <h2><span class="code">justify-content: flex-start;</span> DEFAULT (row, left aligned, no spacing)</h2>
+  <section class="base-container-row flex01">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+  </section>
+
+  <h2><span class="code">justify-content: center;</span> centered horizontally</h2>
+  <section class="base-container-row flex02">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+  </section>
+
+  <h2><span class="code">justify-content: flex-end;</span> - aligned right</h2>
+  <section class="base-container-row flex03">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+  </section>
+
+  <h2><span class="code">justify-content: space-around;</span> evenly spaced apart</h2>
+  <section class="base-container-row flex04">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+  </section>
+
+  <h2><span class="code">justify-content: space-between;</span> pushed way out to the edges, great for responsive layouts</h2>
+  <section class="base-container-row flex05">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+  </section>
+
+  <header class="intro">
+    <p class="heading"><span class="code">align-items</span> - control top/bottom alignment</p>
+  </header>
+
+  <h2><span class="code">align-items: flex-start;</span> DEFAULT - align to top of container</h2>
+  <section class="base-container-column flex30">
+    <div class="base-child child01">1</div>
+    <div class="base-child child02">2</div>
+    <div class="base-child child03">3</div>
+    <div class="base-child child04">4</div>
+    <div class="base-child child05">5</div>
+  </section>
+
+  <h2><span class="code">align-items: flex-end;</span> align to bottom of container</h2>
+  <section class="base-container-column flex31">
+    <div class="base-child child01">1</div>
+    <div class="base-child child02">2</div>
+    <div class="base-child child03">3</div>
+    <div class="base-child child04">4</div>
+    <div class="base-child child05">5</div>
+  </section>
+
+  <h2><span class="code">align-items: center;</span> align objects such that there is even space above and below them</h2>
+  <section class="base-container-column flex32">
+    <div class="base-child child01">1</div>
+    <div class="base-child child02">2</div>
+    <div class="base-child child03">3</div>
+    <div class="base-child child04">4</div>
+    <div class="base-child child05">5</div>
+  </section>
+
+  <h2><span class="code">align-items: stretch;</span> stretch children containers, but for this to work none of the children can have heights</h2>
+  <section class="base-container-column flex33">
+    <div class="base-child-stretch child10">1</div>
+    <div class="base-child-stretch child11">2</div>
+    <div class="base-child-stretch child12">3</div>
+    <div class="base-child-stretch child13">4</div>
+    <div class="base-child-stretch child14">5</div>
+  </section>
+
+  <h2><span class="code">align-items: baseline;</span> makes text inside boxes align regardless of padding/margins in box</h2>
+  <section class="base-container-column flex34">
+    <div class="base-child-stretch child10">1</div>
+    <div class="base-child-stretch child11">2</div>
+    <div class="base-child-stretch child12">3</div>
+    <div class="base-child-stretch child13">4</div>
+    <div class="base-child-stretch child14">5</div>
+  </section>
+
+  <header class="intro">
+    <p class="heading"><span class="code">flex-wrap</span> - control how children flow in containers, from their flex-directions</p>
+  </header>
+  <h2><span class="code">flex-wrap: no-wrap;</span> DEFAULT - flexbox jams children into same row and will adjust widths of children to do so</h2>
+  <section class="base-container-column flex20">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+    <div class="base-child">5</div>
+    <div class="base-child">6</div>
+    <div class="base-child">7</div>
+    <div class="base-child">8</div>
+    <div class="base-child">9</div>
+    <div class="base-child">10</div>
+    <div class="base-child">11</div>
+    <div class="base-child">12</div>
+  </section>
+
+  <h2><span class="code">flex-wrap: wrap;</span> children will flow into new rows as necessary (browser determined, mostly by child width)</h2>
+  <section class="base-container-column flex21">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+    <div class="base-child">5</div>
+    <div class="base-child">6</div>
+    <div class="base-child">7</div>
+    <div class="base-child">8</div>
+    <div class="base-child">9</div>
+    <div class="base-child">10</div>
+    <div class="base-child">11</div>
+    <div class="base-child">12</div>
+  </section>
+
+  <h2><span class="code">flex-wrap: wrap-reverse;</span> children flow into new rows starting from the bottom of the container, I struggle to see where this could be useful - maybe resorting a pseudo-table, responsive small screens?</h2>
+  <section class="base-container-column flex22">
+    <div class="base-child">1</div>
+    <div class="base-child">2</div>
+    <div class="base-child">3</div>
+    <div class="base-child">4</div>
+    <div class="base-child">5</div>
+    <div class="base-child">6</div>
+    <div class="base-child">7</div>
+    <div class="base-child">8</div>
+    <div class="base-child">9</div>
+    <div class="base-child">10</div>
+    <div class="base-child">11</div>
+    <div class="base-child">12</div>
+  </section>
+
+
+    <header class="intro">
+      <p class="heading"><span class="code">flex-direction</span> - control what direction children flow from</p>
+    </header>
+
+    <h2><span class="code">flex-direction: row-reverse;</span> you can also flip the children in a row</h2>
+    <section class="base-container-column flex06">
+      <div class="base-child">1</div>
+      <div class="base-child">2</div>
+      <div class="base-child">3</div>
+      <div class="base-child">4</div>
+    </section>
+
+    <h2><span class="code">flex-direction: column;</span> up and down. This flips the main flexbox axis to the vertical (Y) plane. This is REALLY IMPORTANT! When column, justify-content controls (Y axis) and align-items controls the (X axis).</h2>
+    <section class="base-container-column flex07">
+      <div class="base-child">1</div>
+      <div class="base-child">2</div>
+      <div class="base-child">3</div>
+      <div class="base-child">4</div>
+    </section>
+
+    <h2><span class="code">flex-direction: column-reverse;</span> flip children positioning</h2>
+    <section class="base-container-column flex08">
+      <div class="base-child">1</div>
+      <div class="base-child">2</div>
+      <div class="base-child">3</div>
+      <div class="base-child">4</div>
+    </section>
+
+    <header class="intro">
+      <p class="heading">Flexbox - CHILD properties</p>
+    </header>
+    <header class="intro">
+      <p class="heading"><span class="code">order: #;</span> - reshuffles the child elements</p>
+    </header>
+
+    <h2><span class="code">order: #;</span> DEFAULT 1, controls order based on integer used</h2>
+    <section class="base-container-row flex01">
+      <div class="base-child-red child20">1</div>
+      <div class="base-child-red child21">2</div>
+      <div class="base-child-red child22">3</div>
+      <div class="base-child-red child23">4</div>
+      <div class="base-child-red child24">5</div>
+    </section>
+
+    <header class="intro">
+      <p class="heading"><span class="code">flex-grow: #;</span> - lets child elements expand width at different rates</p>
+    </header>
+
+    <h2><span class="code">order: #;</span> DEFAULT 1, controls how big elements get - works weirdly with children that have widths, should be used without explicit widths set</h2>
+    <section class="base-container-row flex01">
+      <div class="base-child-red child30">1</div>
+      <div class="base-child-red child31">2</div>
+      <div class="base-child-red child32">3</div>
+      <div class="base-child-red child33">4</div>
+      <div class="base-child-red child34">5</div>
+    </section>
+
+    <header class="intro">
+      <p class="heading"><span class="code">flex-shrink: #;</span> - really similar to flex-grow so I rarely use it, must be some use cases though</p>
+    </header>
+
+    <h2><span class="code">flex-shrink: #;</span> DEFAULT 0, controls how children shrink down, should be used without explicit widths set</h2>
+    <section class="base-container-row flex01">
+      <div class="base-child-red child40">1</div>
+      <div class="base-child-red child41">2</div>
+      <div class="base-child-red child42">3</div>
+      <div class="base-child-red child43">4</div>
+      <div class="base-child-red child44">5</div>
+      <div class="base-child-red child40">6</div>
+      <div class="base-child-red child41">7</div>
+      <div class="base-child-red child42">8</div>
+      <div class="base-child-red child43">9</div>
+      <div class="base-child-red child44">10</div>
+    </section>
+
+
+    <header class="intro">
+      <p class="heading"><span class="code">align-self: inherit;</span> - property you can use to override align-items defaults</p>
+    </header>
+
+    <h2><span class="code">align-self: flex-end;</span> aligns object (2) to bottom of container while rest are <span class="code">align-items: center;</span></h2>
+    <section class="base-container-column flex32">
+      <div class="base-child-red child01">1</div>
+      <div class="base-child-red child02 child50">2</div>
+      <div class="base-child-red child03">3</div>
+      <div class="base-child-red child04">4</div>
+      <div class="base-child-red child05">5</div>
+    </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

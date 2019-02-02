@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <title>CSS Display and Floats</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Basic CSS Floats</h1>
+  <hr>
+
+  <!-- Super basic -->
+  <h2>Simplest Floats You Can Do</h2>
+  <p>Two children, floated next to each other. No height applied to the children, so the height of the children is equal to the content inside.</p>
+  <section class="main-container">
+    <div class="box">Content</div>
+    <div class="box">Content</div>
+  </section>
+
+  <!-- Three wide -->
+  <h2>Floats - three items in one container</h2>
+  <p>.box-1 has some padding on it - see how it effects the box model in the CSS layer</p>
+  <section class="main-container">
+    <div class="box-1">Content</div>
+    <div class="box-2">Content</div>
+    <div class="box-3">Content</div>
+  </section>
+
+  <!-- Ten wide -->
+  <h2>Floats - ten items in one container, same thing</h2>
+  <section class="main-container">
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+    <div class="box-10">Content</div>
+  </section>
+
+  <!-- Floats in floats! -->
+  <h2>Floats in floats, yes you can</h2>
+  <p>Trick here is to remember that the nested item's width is RELATIVE to it's parent. 50% of 50% is 25%! Watch how overflow works, adjust screen width.</p>
+  <section class="main-container">
+    <div class="box-100">
+      <div class="box-nested">I'm a nested float</div>
+      <div class="box-nested">I'm also a nested float</div>
+    </div>
+    <div class="box-200"></div>
+    <div class="box-300"></div>
+    <div class="box-400"></div>
+  </section>
+
+  <!-- Borders with floats -->
+  <h2>Borders with floats</h2>
+  <p>Border calculations are tricky because you can't use percentage widths for borders. Instead try the 'vw' unit, which stands for viewport width. It's very similar and works for border widths.</p>
+  <section class="main-container-vw">
+    <div class="box-1000">Content</div>
+    <div class="box-2000">Content</div>
+    <div class="box-3000">Content</div>
+    <div class="box-4000">Content</div>
+  </section>
+
+</body>
+</html>

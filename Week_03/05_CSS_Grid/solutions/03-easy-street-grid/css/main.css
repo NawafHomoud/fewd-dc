@@ -1,0 +1,65 @@
+body {
+  background-repeat: no-repeat;
+  color: black;
+  margin: 0;
+  padding: 35px 70px 200px 70px;
+}
+
+/* offset page header height by height of the top header*/
+h1 {
+  padding-top: 100px;
+}
+
+h2 {
+  padding-top: 80px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+.code {
+  font-family: courier;
+}
+
+.intro {
+  color: black;
+  margin-top: 25px;
+}
+
+.heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
+/*
+##################################
+######## Container Styles ########
+##################################
+*/
+
+/*
+  Setting up the three column grid is pretty simple really
+  Using the `fr` unit, we can quickly get three columns with only two properties - `display` and `grid-template-columns`
+  `grid-gap` intelligently applies row/column padding to all tracks and fr units automatically count that in their box model
+  Taken together, this gives us a really nice clean grid
+*/
+.grid-city {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+}
+
+/* 
+  Check this out and really think about it. No really.
+  Images are default inline element, whose left/right dimensions aren't controllable (remember lesson 3 on the box model??)
+  We reset that with `display: block;`
+  Then `max-width: 100%` says to the browser, you can make this however big you want but the image can't spill out of its container
+  Then finally, `height: auto;` we haven't seen before but it's similar to automatic margins - the browser will determine the height automatically
+  Taken together, the image can now adjust itself dynamically to snap into the grid and be responsive to any screen width
+*/
+img {
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+}

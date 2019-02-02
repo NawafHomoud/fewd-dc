@@ -1,0 +1,117 @@
+body {
+  margin: 25px;
+}
+
+/* Top nav area of the site */
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+/* Really simple media query */
+@media screen and (min-width: 480px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+nav li {
+  background-color: lightblue;
+  height: 80px;
+  list-style-type: none;
+  padding: 0;
+  margin: 1%;
+  width: 99%;
+}
+
+/* Two column sidebar type layout */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Another really simple media query */
+@media screen and (min-width: 960px) {
+  .main-container {
+    flex-direction: row;
+  }
+}
+
+div {
+  background-color: teal;
+  height: 360px;
+  margin: 1%;
+  width: 98%;
+}
+
+@media screen and (min-width: 960px) {
+  div {
+    margin: 1%;
+    width: 73%;
+  }
+}
+
+aside {
+  background-color: lightgray;
+  height: 480px;
+  margin: 1%;
+  width: 98%;
+}
+
+@media screen and (min-width: 960px) {
+  aside {
+    margin: 1%;
+    width: 23%;
+  }
+}
+
+/* 3rd section of the page  */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  margin: 1%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+main section {
+  background-color: limegreen;
+  height: 60px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  footer {
+    flex-direction: row;
+  }
+}
+
+footer section {
+  background-color: pink;
+  height: 60px;
+  margin: 1%;
+  width: 98%;
+}
+
+

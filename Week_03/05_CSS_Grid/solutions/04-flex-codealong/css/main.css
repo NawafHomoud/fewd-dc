@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Big top-level container showing three items side-by-side */
+.flexbox-container {
+  align-items: center;
+  background-image: linear-gradient( 45deg, 
+  rgba(255, 174, 0, 0.5), 
+  black);  
+  color: white;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+.flexbox-second-level {
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin: 20px;
+  width: 200px;
+}
+
+.flexbox-third-level {
+  color: black;
+}

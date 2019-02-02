@@ -1,0 +1,17 @@
+/* Zeroing out margins/padding */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Big top-level container showing three items side-by-side */
+.flexbox-first-level {
+}
+
+.flexbox-second-level {
+
+}
+
+.flexbox-third-level {
+
+}

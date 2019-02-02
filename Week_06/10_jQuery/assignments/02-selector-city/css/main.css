@@ -1,0 +1,58 @@
+body {
+  margin: 15px;
+}
+
+h1 {
+  padding-top: 40px;
+}
+
+h2 {
+  padding-top: 40px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+#js01ID {
+  cursor: pointer;
+}
+
+#css-example-03 {
+  display: none;
+}
+
+#slide-up-target, #slide-down-target, #slide-toggle-target {
+  background-color: blue;
+  color: white;
+}
+
+#slide-down-target {
+  display: none;
+}
+
+/* Applied only by JS/jQuery */
+.red {
+  color: white;
+  background-color: red;
+}
+
+.orange {
+  color: black;
+  background-color: orange;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+.aquamarine {
+  background-color: green;
+  color: white;
+}

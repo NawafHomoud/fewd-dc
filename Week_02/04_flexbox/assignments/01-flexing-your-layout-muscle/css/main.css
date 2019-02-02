@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+}
+
+/* offset page header height by height of the top header*/
+h1 {
+  padding-top: 100px;
+}
+
+h2 {
+  padding-top: 80px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+.code {
+  font-family: courier;
+}
+
+.intro {
+  background-color: #4855FF;
+  margin-top: 25px;
+  padding: 35px 70px;
+}
+
+.heading {
+  color: rgba(255,255,255,1);
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
+/*
+##################################
+######## Container Styles ########
+##################################
+*/
+.base-container-row {
+  border: 1px solid black;
+  display: flex;
+  height: 200px;
+}
+
+.base-container-column {
+  border: 1px solid black;
+  display: flex;
+}
+
+
+/*
+Exploring flex-direction and justify-content properties
+*/
+
+/* Defaults */
+.flex01 {
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.flex02 {
+  justify-content: center;
+}
+
+.flex03 {
+  justify-content: flex-end;
+}
+
+.flex04 {
+  justify-content: space-around;
+}
+
+.flex05 {
+  justify-content: space-between;
+}
+
+/* Exploring flex-direction */
+.flex06 {
+  flex-direction: row-reverse;
+}
+
+.flex07 {
+  flex-direction: column;
+}
+
+.flex08 {
+  flex-direction: column-reverse;
+}
+
+/* Exploring flex-wrap */
+.flex20 {
+  flex-direction: row; /* default but I'm putting it here anyway */
+  flex-wrap: no-wrap;
+}
+
+.flex21 {
+  flex-direction: row; /* default but I'm putting it here anyway */
+  flex-wrap: wrap;
+}
+
+.flex22 {
+  flex-direction: row; /* default but I'm putting it here anyway */
+  flex-wrap: wrap-reverse;
+}
+
+/* Exploring align-items, use it to control top/bottom alignment */
+.flex30 {
+  align-items: flex-start;
+}
+
+.flex31 {
+  align-items: flex-end;
+}
+
+.flex32 {
+  align-items: center;
+}
+
+.flex33 {
+  align-items: stretch;
+}
+
+.flex34 {
+  align-items: baseline;
+}
+
+/*
+##############################
+######## Child Styles ########
+##############################
+*/
+
+.base-child {
+  background-color: orange;
+  border: 1px solid white;
+  color: white;
+  font-size: 48px;
+  height: 100px;
+  width: 100px;
+}
+
+.base-child-red {
+  background-color: red;
+  border: 1px solid white;
+  color: white;
+  font-size: 48px;
+  height: 100px;
+}
+
+.base-child-stretch {
+  background-color: orange;
+  border: 1px solid white;
+  color: white;
+  font-size: 48px;
+}
+
+.child01 { height: 300px; width: 100px; }
+.child02 { height: 100px; width: 100px; }
+.child03 { height: 200px; width: 100px; }
+.child04 { height: 500px; width: 100px; }
+.child05 { height: 400px; width: 100px; }
+
+/* To better demo align-items*/
+.child10 {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  width: 100px;
+}
+
+.child11 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100px;
+}
+
+.child12 {
+  padding-top: 90px;
+  padding-bottom: 10px;
+  width: 100px;
+}
+
+.child13 {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  width: 100px;
+}
+
+.child14 {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  width: 100px;
+}
+
+/* ORDER */
+.child20 {
+  order: 4;
+  width: 100px;
+}
+
+.child21 {
+  order: 2;
+  width: 100px;
+}
+
+.child22 {
+  order: 1;
+  width: 100px;
+}
+
+.child23 {
+  order: 5;
+  width: 100px;
+}
+
+.child24 {
+  order: 3;
+  width: 100px;
+}
+
+/* FLEX-GROW */
+.child30 {
+  flex-grow: 4;
+}
+
+.child31 {
+  flex-grow: 2;
+}
+
+.child32 {
+  flex-grow: 1;
+}
+
+.child33 {
+  flex-grow: 5;
+}
+
+.child34 {
+  flex-grow: 3;
+}
+
+/* FLEX-SHRINK */
+.child40 {
+  flex-shrink: 4;
+  width: 300px;
+}
+
+.child41 {
+  flex-shrink: 2;
+  width: 300px;
+}
+
+.child42 {
+  flex-shrink: 1;
+  width: 300px;
+}
+
+.child43 {
+  flex-shrink: 5;
+  width: 300px;
+}
+
+.child44 {
+  flex-shrink: 3;
+  width: 300px;
+}
+
+/* align-item */
+.child50 {
+  align-self: flex-end;
+}

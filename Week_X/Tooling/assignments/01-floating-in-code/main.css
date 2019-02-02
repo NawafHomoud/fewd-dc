@@ -1,0 +1,54 @@
+/* Float demo */
+.container-1 {
+  height: 200px;
+  background-color: #666;
+}
+
+.container-3 {
+  height: 200px;
+  background-color: #666;
+  width: 20%;
+}
+
+.box-1 {
+  height: 600px;
+  float: left;
+  margin: 1% 2%;
+  width: 16%;
+}
+
+.box-2 {
+  height: 600px;
+  float: left;
+  margin: 1% 5%;
+  width: 50%;
+}
+
+.box-3 {
+  height: 600px;
+  float: left;
+  margin: 1% 2%;
+  width: 46%;
+}
+
+.clearfix:after {
+  clear: both;
+  content: "Kelsi wonders what happens";
+  display: block;
+}
+
+.color-1 {
+  background-color: #dbff9e;
+}
+
+.color-2 {
+  background-color: blue;
+}
+
+.color-3 {
+  background-color: rgba(255, 66, 66, 1);
+}
+
+.color-4 {
+  background-color: pink;
+}

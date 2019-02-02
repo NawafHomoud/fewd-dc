@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+/* offset page header height by height of the top header*/
+h1 {
+  padding-top: 100px;
+}
+
+div {
+  padding-bottom: 30px;
+}
+
+.national-park-intro {
+  background-color: #4855FF;
+  height: 140px;
+  padding: 35px 70px;
+}
+
+.heading {
+  color: rgba(255,255,255,1);
+  float: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  width: 270px;
+}
+
+.select-container {
+  float: left;
+  width: calc(100% - 270px);
+}
+
+select {
+  margin-top: 56px;
+  margin-left: 25px;
+  width: 200px;
+}
+
+.main-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}

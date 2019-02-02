@@ -1,0 +1,13 @@
+.navbar-default .navbar-nav > .active > a {
+    color: red;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: purple;
+    background-color: white;
+}
+
+.btn-default {
+    background: green;
+    color: white;
+}

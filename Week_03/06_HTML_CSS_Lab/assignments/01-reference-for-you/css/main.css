@@ -1,0 +1,135 @@
+body {
+  margin: 15px;
+}
+
+/* Float container */
+.main-container {
+  background-color: #313300;
+  color: #fff;
+  font-size: 30px;
+  height: 400px;
+  margin-top: 15px;
+  padding: 25px;
+}
+
+/* Floated Elements */
+.box-1, .box-2, .box-3, .box-4 {
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+.box-1 {
+  background-color: #fcffa3;
+}
+
+.box-2 {
+  background-color: #c2ceff;
+}
+
+.box-3 {
+  background-color: #ffc2c2;
+}
+
+.box-4 {
+  background-color: #ffc2fb;
+}
+
+/* Clearfix - one of multiple ways to do this */
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+
+.google-link {
+  background-color: red;
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+
+.google-link:hover {
+  background-color: green;
+}
+
+.apple-link {
+  background-color: blue;
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+
+.apple-link:visited {
+  background-color: purple;
+}
+
+.nytimes-link {
+  background-color: orange;
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+
+.nytimes-link:active {
+  background-color: blue;
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+
+.first-list li:first-child {
+  color: red;
+}
+
+.last-list li:last-child {
+  color: red;
+}
+
+/* nth-child pattern */
+.pattern-list li:nth-child(3n) {
+  color: red;
+}
+
+/**/
+.system-font, .google-font, .custom-font {
+  margin-bottom: 20px;
+}
+
+.system-font {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+}
+
+.google-font {
+   font-family: 'Galada', cursive;
+   font-size: 48px;
+   line-height: 1.2;
+}
+
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+       url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+       url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+}
+
+.custom-font {
+  font-family: 'League Gothic', Arial, sans-serif;
+  font-size: 50px;
+}
+
+.menu-list li {
+  display: inline;
+}
+
+.menu-list li:after {
+  content: " | ";
+}
+
+.menu-list li:last-child:after {
+  content: "";
+}
